@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ac_main_bottom_rg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:background="@color/main_bottom_bg"
+   >
+
+    <RadioButton
+        android:id="@+id/ic_main_rb_main_page"
+        style="@style/ac_main_bottom_rg_style"
+        android:checked="true"
+        android:drawableTop="@drawable/ac_main_main_page_selector"
+        android:text="首页" 
+        />
+
+    <RadioButton
+        android:id="@+id/ic_main_rb_find"
+        style="@style/ac_main_bottom_rg_style"
+        android:drawableTop="@drawable/ac_main_find_selector"
+        android:text="发现" />
+
+    <RadioButton
+        android:id="@+id/ic_main_rb_msg"
+        style="@style/ac_main_bottom_rg_style"
+        android:drawableTop="@drawable/ac_main_msg_selector"
+        android:text="消息" />
+
+    <RadioButton
+        android:id="@+id/ic_main_rb_mine"
+        style="@style/ac_main_bottom_rg_style"
+        android:drawableTop="@drawable/ac_main_mine_selector"
+        android:text="我的" />
+
+</RadioGroup>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <com.beiing.xiaoxiongkanfang.widget.RoundImageView
+        android:id="@+id/fm_xf_detail_model7_agent_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/list_default_image" />
+
+    <TextView
+        android:id="@+id/fm_xf_detail_model7_agent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fm_xf_detail_model7_agent_head"
+        android:text="赵杰"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/fm_xf_detail_model7_agent_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_xf_detail_model7_agent_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/fm_xf_detail_model7_agent_head"
+        android:text="我用心，你放心" />
+
+    <ImageButton
+        android:id="@+id/fm_xf_detail_model7_agent_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_house_detail_dial_selector" />
+
+</RelativeLayout>

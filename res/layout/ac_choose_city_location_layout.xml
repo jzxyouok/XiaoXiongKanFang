@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ac_choose_city_location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/choose_city_loc"
+    android:drawablePadding="5dp"
+    android:drawableStart="@drawable/icon_locate_city"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:text="当前定位城市:北京" />

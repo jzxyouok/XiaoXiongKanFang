@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fm_xf_detail_content_model_1" />
+
+    <include layout="@layout/fm_xf_detail_content_model_2" />
+
+    <include layout="@layout/fm_xf_detail_content_model_3" />
+
+    <View style="@style/fm_xf_detail_content_view_style" />
+
+    <include layout="@layout/fm_xf_detail_content_model_4" />
+
+    <View style="@style/fm_xf_detail_content_view_style" />
+
+    <include layout="@layout/fm_xf_detail_content_model_5" />
+
+    <View style="@style/fm_xf_detail_content_view_style" />
+
+    <include layout="@layout/fm_xf_detail_content_model_6" />
+
+    <View style="@style/fm_xf_detail_content_view_style" />
+
+    <include layout="@layout/fm_xf_detail_content_model_7" />
+
+    <View style="@style/fm_xf_detail_content_view_style" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:id="@+id/fm_xf_model3_ll">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最新动态"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/fm_xf_model3_titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/setting_arrow"
+        android:text="黄龙和山已于9月19号推出45-60m^2酒店式公寓"
+        android:textColor="@color/main_cinya" />
+
+    <TextView
+        android:id="@+id/fm_xf_model3_summaryTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:lineSpacingExtra="5dp"
+        android:text="黄龙和山已于9月19号推出45-60m^2酒店式公寓，有精装和毛坯两种" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/ac_discount_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_cinya"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:id="@+id/ac_discount_back_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:onClick="onBackClick" />
+
+        <TextView
+            android:id="@+id/ac_discount_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="打折优惠"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/fm_search_condition_bar_layout" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/ac_discount_lv"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ac_main_bottom_rg"
+        android:layout_below="@id/ac_main_ll_top"
+        android:divider="@null" 
+        />
+
+</LinearLayout>

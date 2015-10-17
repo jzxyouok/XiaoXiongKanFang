@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <include layout="@layout/ac_main_top_layout" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/ac_main_center_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ac_main_bottom_rg"
+            android:layout_below="@id/ac_main_ll_top"
+            android:divider="@null" />
+    </RelativeLayout>
+	
+    <include layout="@layout/waiting_dialg"/>
+
+</FrameLayout>

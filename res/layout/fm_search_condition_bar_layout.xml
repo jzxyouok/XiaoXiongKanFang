@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+        android:id="@+id/fm_xf_list_search_region"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:text="区域"
+        android:textSize="15sp" />
+
+    <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+        android:id="@+id/fm_xf_list_search_kind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:text="类别"
+        android:textSize="15sp" />
+
+    <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+        android:id="@+id/fm_xf_list_search_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:text="价格"
+        android:textSize="15sp" />
+
+    <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+        android:id="@+id/fm_xf_list_search_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:text="更多"
+        android:textSize="15sp" />
+
+</LinearLayout>

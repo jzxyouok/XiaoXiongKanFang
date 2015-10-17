@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/ac_xf_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/ac_xf_detail_top_rl"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/top_default_image"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/ac_xf_detail_back_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_house_detail_back_selector"
+                    android:onClick="onIbClick" />
+
+                <ImageButton
+                    android:id="@+id/ac_xf_detail_favorate_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_house_detail_favorate_selector"
+                    android:onClick="onIbClick" />
+
+                <ImageButton
+                    android:id="@+id/ac_xf_detail_share_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/ac_xf_detail_favorate_ib"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_house_detail_share_selector"
+                    android:onClick="onIbClick" />
+
+                <TextView
+                    android:id="@+id/ac_xf_detail_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="299"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/ac_xf_detail_num_tv"
+                    android:background="@drawable/icon_num_img" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/ac_xf_detail_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/ac_xf_deail_info_rb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="楼盘信息"
+                    android:textColor="@drawable/ac_main_text_selector" />
+
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/main_bg" />
+
+                <RadioButton
+                    android:id="@+id/ac_xf_deail_comment_rb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="评论"
+                    android:textColor="@drawable/ac_main_text_selector" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/main_bg" />
+
+            <FrameLayout
+                android:id="@+id/ac_xf_detail_fm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fab" >
+            </FrameLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <RadioGroup
+        android:id="@+id/ac_xf_detail_rg_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/ac_xf_deail_info_rb_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="楼盘信息"
+            android:textColor="@drawable/ac_main_text_selector" />
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/main_bg" />
+
+        <RadioButton
+            android:id="@+id/ac_xf_deail_comment_rb_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="评论"
+            android:textColor="@drawable/ac_main_text_selector" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="visible" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_house_detail_tel_selector"
+            android:text="15764230067"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ac_xf_detail_back_top_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_house_detail_to_top_selector" />
+
+</FrameLayout>

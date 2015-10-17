@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_cinya">#00B3D4</color><!-- 主题颜色：淡蓝 -->
+    <color name="white">#fff</color>
+     <color name="black">#000</color>
+     <color name="red">#f00</color>
+    <color name="gray">#848484</color><!--主界面字体没被选中显示的颜色 -->
+    <color name="label_cinya">#E0F0F4</color><!-- 城市列表标签页 -->
+    <color name="divider_gray">#E0E0E0</color>
+    <color name="text_dialog_cinya">#6BE4FB</color>
+    <color name="lv_item_pressed_cinya">#D2F1F7</color><!--  item点击显示的颜色  -->
+    <color name="main_bg">#DEDEDE</color><!-- 主界面 背景 -->
+    <color name="main_bottom_bg">#FAFAFA</color>
+    <color name="info_cotent_text_color">#525252</color> <!-- 详情页面字体颜色 -->
+    
+    <color name="ac_info_bottom">#E8EBF1</color><!-- 资讯详情底部背景 -->
+    <color name="choose_city_loc">#FAFCFE</color><!-- 当前定位背景色 -->
+    <color name="slice_gray">#F0F2F4</color>
+    
+    <color name="trance_black">#8000</color><!-- 半透明黑色 -->
+</resources>

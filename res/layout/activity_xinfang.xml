@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ac_xinfang_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_cinya"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:id="@+id/ac_xinfang_back_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector" 
+            android:onClick="onBtnClick"/>
+
+        <TextView
+            android:id="@+id/ac_xinfang_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新房"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ac_xinfang_search_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             android:onClick="onBtnClick"
+            android:background="@drawable/btn_search_selector" />
+
+        <ImageButton
+            android:id="@+id/ac_xinfang_map_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+             android:onClick="onBtnClick"
+            android:layout_toLeftOf="@id/ac_xinfang_search_ib"
+            android:background="@drawable/btn_map_selector" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/ac_xinfang_fm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>
+
+
+  <include layout="@layout/waiting_dialg"/>
+
+</FrameLayout>

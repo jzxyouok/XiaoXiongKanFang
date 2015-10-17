@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" 
+    android:padding="5dp"
+     android:background="#E0F0F4"
+    >
+
+    <TextView
+        android:id="@+id/ac_city_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:text="当前城市" />
+
+</RelativeLayout>
+
+
+

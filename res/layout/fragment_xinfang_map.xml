@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 引用百度地图的UI控件 -->
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/fm_xinfang_map_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fm_xinfang_map_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trance_black"
+            android:padding="10dp"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/fm_xinfang_info_window_rl"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_xinfang_map_title"
+            android:background="@drawable/listview_background_ffffff"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/fm_xf_map_cover"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/list_default_image" />
+
+            <ImageView
+                android:id="@+id/fm_xf_map_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.1"
+                android:background="@drawable/setting_arrow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/fm_xf_map_look"
+                android:layout_toRightOf="@id/fm_xf_map_cover"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/fm_xf_map_average_pre_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="均价"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/fm_xf_map_average_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="暂无均价"
+                        android:textSize="12sp"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/fm_xf_map_average_unit_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元/平米"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fm_xf_map_around_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="周边 13000-21500"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/trance_black"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/fm_xinfang_map_left_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_map_left_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fm_xinfang_map_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/fm_xinfang_map_right_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_map_right_selector" />
+    </RelativeLayout>
+
+</FrameLayout>

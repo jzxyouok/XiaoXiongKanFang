@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 新房详情第一个模块  start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/fm_xf_model1_nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="复地黄龙和山"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/fm_xf_model1_avgTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="均价19000元/平米"
+            android:textColor="@color/red" />
+
+        <ImageButton
+            android:id="@+id/fm_xf_model1_calculateIb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_house_detail_calculate_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fm_xf_model1_kaipanTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="开盘:2015年9月19日 在售"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fm_xf_model1_addressTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地址:西湖区西溪路957号 "
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/fm_xf_model1_tomap_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/setting_arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fm_xf_model1_features_ll"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout> <!-- 新房详情第一个模块  end <br> -->

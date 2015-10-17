@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ac_kaipan_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_cinya"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:id="@+id/ac_kaipan_back_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:onClick="onBackClick" />
+
+        <TextView
+            android:id="@+id/ac_kaipan_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="最新开盘"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/ac_kp_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+            android:id="@+id/ac_kp_list_search_region"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textview_selector"
+            android:gravity="center"
+            android:text="区域"
+            android:textSize="15sp" />
+
+        <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+            android:id="@+id/ac_kp_list_search_kind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_selector"
+            android:gravity="center"
+            android:text="类别"
+            android:textSize="15sp" />
+
+        <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+            android:id="@+id/ac_kp_list_search_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_selector"
+            android:gravity="center"
+            android:text="价格"
+            android:textSize="15sp" />
+
+        <com.beiing.xiaoxiongkanfang.widget.SpinnerButton
+            android:id="@+id/ac_kp_list_search_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_selector"
+            android:gravity="center"
+            android:text="一年..."
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/ac_kp_total_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/slice_gray"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:textSize="10sp" />
+
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/ac_kp_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />    -->
+
+</LinearLayout>
